@@ -1,11 +1,11 @@
 package duck;
 
 import ducks.flybehavior.*;
-import ducks.quakbehavior.*;
+import ducks.quackbehavior.*;
 
 public abstract class Duck {
-	FlyBehavior flyBehavior;
-	QuackBehavior quackBehavior;
+	public FlyBehavior flyBehavior;
+	public QuackBehavior quackBehavior;
  
 	public Duck() {
 	}
@@ -18,7 +18,7 @@ public abstract class Duck {
 		quackBehavior = qb;
 	}
  
-	abstract void display();
+	abstract public void display();
  
 	public void performFly() {
 		flyBehavior.fly();
